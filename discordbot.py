@@ -23,10 +23,10 @@ async def ping(ctx):
     
 @client.event
 async def on_message(message):
-   if message.author.bot:　　　　　　　　　　　　　　　
+   if message.author.bot:
        return
-   if message.content == '樋□さんこんちわ':
-       await message.channel.send('しずかにして')
+   if message.content == 'こんにちは':
+       await message.channel.send("こんにちはー！")
 
  if message.content == "お話して！":
 　　　　　#↓
