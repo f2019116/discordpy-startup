@@ -2,6 +2,7 @@ from discord.ext import commands
 import os
 import traceback
 import discord 
+import random
 
 client = discord.Client()
 
@@ -19,13 +20,18 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
-
+    
 @client.event
 async def on_message(message):
-   if message.author.bot:
+   if message.author.bot:　　　　　　　　　　　　　　　
        return
-   if message.content == 'やっほー':
-       await message.channel.send('やっほー')
+   if message.content == '樋□さんこんちわ':
+       await message.channel.send('しずかにして')
 
+ if message.content == "お話して！":
+　　　　　#↓
+       haha = ["", "", "", "", "", "", ""]
+       choice = random.choice(haha)
+       await message.channel.send(choice)
 
 bot.run(token)
