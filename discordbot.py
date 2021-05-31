@@ -1,8 +1,6 @@
 from discord.ext import commands
 import os
 import traceback
-import discord 
-import random
 
 client = discord.Client()
 
@@ -21,16 +19,7 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pong')
     
-@client.event
-async def on_message(message):
-   if message.author.bot:
-       return
-   if message.content == 'こんにちは':
-       await message.channel.send("こんにちはー！")
-        
-   if message.content == "お話して！":
-       haha = ["", "", "", "", "", "", ""]
-       choice = random.choice(haha)
-       await message.channel.send(choice)
-
+async def neko(ctx):
+    await ctx.send('にゃーん')
+    
 bot.run(token)
