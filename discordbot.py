@@ -19,7 +19,7 @@ async def ping(ctx):
     
 @client.event
 async def on_message(message):
-   if message.author.bot:　　　　　　　　　　　　　　　
+   if message.author.bot:
        return  　　　　　　　　＃発言者がBOTなら無視
    if message.content == 'やっほー':　　　　　＃発言に返信する
        await message.channel.send('やっほー')　＃返信内容は''で括る。
