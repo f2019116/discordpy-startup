@@ -22,7 +22,7 @@ async def ping(ctx):
 
 @client.event
 async def on_message(message):
-   if message.author.bot:　　　　　　　　　　　　　　　
+   if message.author.bot:
        return
    if message.content == 'やっほー':
        await message.channel.send('やっほー')
