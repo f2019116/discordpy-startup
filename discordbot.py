@@ -17,7 +17,7 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pong')
     
-    async def 'やっほー'(ctx):
+    async def やっほー(ctx):
     await ctx.send('やっほー')
 
 
