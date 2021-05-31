@@ -27,8 +27,8 @@ async def on_message(message):
        return
    if message.content == 'こんにちは':
        await message.channel.send("こんにちはー！")
-
- if message.content == "お話して！":
+        
+   if message.content == "お話して！":
        haha = ["", "", "", "", "", "", ""]
        choice = random.choice(haha)
        await message.channel.send(choice)
