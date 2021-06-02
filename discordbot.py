@@ -24,5 +24,10 @@ async def ping(ctx):
 async def neko(ctx):
     await ctx.send('にゃーん')
     
+@client.event
+async def on_message(message):#メッセージを受け取る関数
+    if message.content == "おはよう":
+        await client.send_message(message.channel,"おはー")
+    
 bot.run(token)
 
