@@ -3,11 +3,9 @@ import os
 import traceback
 import discord
 import random
-cliemt = discord.Client()
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
-client.run(token)
 
 
 @bot.event
@@ -24,8 +22,7 @@ async def ping(ctx):
 @bot.command()
 async def neko(ctx):
     await ctx.send('にゃーん')
-    
-@client.event
+
 async def on_message(message):#メッセージを受け取る関数
     if message.content == "おはよう":
         await client.send_message(message.channel,"おはー")
