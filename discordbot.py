@@ -21,7 +21,7 @@ async def ping(ctx):
     await ctx.send('pong')
     
 async def neko(ctx):
-    await ctx.send("neko")
+    await ctx.send('neko')
     
 bot.run(token)
 
