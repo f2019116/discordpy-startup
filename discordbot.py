@@ -21,6 +21,8 @@ async def on_member_join(member):
 @client.event#ボイスチャンネルに入ったとき
 async def on_voice_state_update(member, before, after):
 
+    
+    
 @bot.command()#コマンド
 async def ping(ctx):
     await ctx.send('pong')
