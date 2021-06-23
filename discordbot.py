@@ -13,13 +13,13 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
     
     
-@client.event #誰か入ったときのやつ
-async def on_member_join(member):
+#@client.event #誰か入ったときのやつ
+#async def on_member_join(member):
 
 
     
-@client.event#ボイスチャンネルに入ったとき
-async def on_voice_state_update(member, before, after):
+#@client.event#ボイスチャンネルに入ったとき
+#async def on_voice_state_update(member, before, after):
 
     
     
